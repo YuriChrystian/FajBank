@@ -5,33 +5,25 @@
     android:id="@+id/main"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".MainActivity"
-    android:background="#3456F6">
+    android:background="#003C77"
+    tools:context=".MainActivity">
 
-    <TextView
-        android:id="@+id/main_textview_titulo"
+    <ProgressBar
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="FajBank"
-        android:textSize="40dp"
-        android:textColor="#FFFFFF"
-        android:layout_marginTop="40dp"
+        app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
-
-    <TextView
-        android:id="@+id/main_textview_frase"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="Seu futuro esta aqui!"
-        android:textSize="27dp"
-        android:textColor="#F4E02F"
-        android:layout_marginTop="10dp"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/main_textview_titulo"
         />
 
-
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Teste"
+        android:textSize="100dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        android:textColor="@color/white"
+/>
 </androidx.constraintlayout.widget.ConstraintLayout>

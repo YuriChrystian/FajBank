@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/gateway"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#003C77"
+    tools:context=".GatewayActivity">
+
+    <View
+        android:id="@+id/gateway_view_white"
+        android:layout_width="match_parent"
+        android:layout_height="250dp"
+        android:background="@color/white"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        />
+    <View
+        android:id="@+id/gateway_view_yellow"
+        android:layout_width="match_parent"
+        android:layout_height="9dp"
+        android:background="#E8AF08"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/gateway_view_white"
+        />
+
+    <TextView
+        android:id="@+id/gateway_textview_titulo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="40dp"
+        android:text="FajBank"
+        android:textColor="#FFFFFF"
+        android:textSize="40dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/gateway_textview_frase"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:text="Controle sua grana, conquiste seus sonhos!"
+        android:layout_marginStart="40dp"
+        android:textColor="#0F0F0F"
+        android:textSize="27dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/gateway_textview_titulo" />
+
+
+    <Button
+        android:id="@+id/main_button_cadastrar"
+        android:layout_width="350dp"
+        android:layout_height="wrap_content"
+        android:backgroundTint="@color/white"
+        android:text="Quero me cadastrar"
+        android:textColor="#040404"
+        android:layout_marginBottom="10dp"
+        app:layout_constraintBottom_toTopOf="@+id/main_button_login"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <Button
+        android:id="@+id/main_button_login"
+        android:layout_width="350dp"
+        android:layout_height="wrap_content"
+        android:backgroundTint="#EAB008"
+        android:text="Já tenho conta"
+        android:textColor="#040404"
+        android:layout_marginBottom="20dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
