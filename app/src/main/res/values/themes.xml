@@ -1,9 +1,28 @@
 <resources xmlns:tools="http://schemas.android.com/tools">
     <!-- Base application theme. -->
-    <style name="Base.Theme.FajBank" parent="Theme.Material3.DayNight.NoActionBar">
-        <!-- Customize your light theme here. -->
-        <!-- <item name="colorPrimary">@color/my_light_primary</item> -->
+    <style name="Base.Theme.FajBank" parent="Theme.Material3.DayNight.NoActionBar"/>
+    <style name="Theme.FajBank" parent="Base.Theme.FajBank">
+        <item name="android:windowBackground">@color/surface</item>
     </style>
 
-    <style name="Theme.FajBank" parent="Base.Theme.FajBank" />
+    <style name="Button.Base.FajBank" parent="Theme.FajBank">
+        <item name="android:padding">18dp</item>
+        <item name="android:textSize">16sp</item>
+        <item name="android:fontFamily">@font/inter_bold</item>
+    </style>
+
+    <style name="FajBank.Button.Primary" parent="Button.Base.FajBank">
+        <item name="android:background">@drawable/button_style_primary</item>
+        <item name="android:textColor">@color/button_text_primary</item>
+    </style>
+    <style name="FajBank.Button.Second" parent="Button.Base.FajBank">
+        <item name="android:background">@drawable/button_style_secound</item>
+        <item name="android:textColor">@color/blue_300</item>
+    </style>
+
+    <style name="FajBank.Text.Title.Main" parent="Theme.FajBank">
+        <item name="android:textSize">28sp</item>
+        <item name="android:textColor">@color/blue_300</item>
+        <item name="android:fontFamily">@font/inter_bold</item>
+    </style>
 </resources>
