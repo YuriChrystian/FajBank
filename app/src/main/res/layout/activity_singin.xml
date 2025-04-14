@@ -44,13 +44,14 @@
         android:hint="E-mail ou RA"
         android:backgroundTint="@android:color/white"
         app:boxStrokeWidth="3dp"
-        app:boxStrokeColor="@color/black"
+        app:boxStrokeColor="@color/white"
         android:maxLines="1"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@id/singin_view_yellow">
     <com.google.android.material.textfield.TextInputEditText
         android:id="@+id/singin_inputEditText_login"
         android:paddingStart="0dp"
+        android:maxLines="1"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:backgroundTint="@android:color/white"
