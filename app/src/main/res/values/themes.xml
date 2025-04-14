@@ -19,6 +19,9 @@
         <item name="android:background">@drawable/button_style_secound</item>
         <item name="android:textColor">@color/blue_300</item>
     </style>
+    <style name="FajBank.Button.Gray" parent="Button.Base.FajBank">
+        <item name="android:textColor">@color/black</item>
+    </style>
 
     <style name="FajBank.Text.Title.Main" parent="Theme.FajBank">
         <item name="android:textSize">28sp</item>
