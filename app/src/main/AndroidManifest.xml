@@ -15,6 +15,8 @@
         <activity
             android:name=".GatewayActivity"
             />
+        <activity android:name=".feature.user.singup.SingUpActiivity"
+            />
         <activity
             android:name=".MainActivity"
             android:exported="true">

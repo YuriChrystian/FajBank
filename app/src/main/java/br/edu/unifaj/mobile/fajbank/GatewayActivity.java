@@ -27,6 +27,7 @@ public class GatewayActivity extends AppCompatActivity {
             public void onClick(View v) {
                 startActivity(new Intent(GatewayActivity.this, SignInActivity.class));
             }
+
         });
     }
 }

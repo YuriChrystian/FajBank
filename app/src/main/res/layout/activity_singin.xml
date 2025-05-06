@@ -41,7 +41,7 @@
         app:hintTextColor="@android:color/white"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:hint="E-mail ou RA"
+        android:hint="E-mail"
         android:backgroundTint="@android:color/white"
         app:boxStrokeWidth="3dp"
         app:boxStrokeColor="@color/white"
@@ -62,18 +62,6 @@
         />
     </com.google.android.material.textfield.TextInputLayout>
 
-    <TextView
-        android:id="@+id/singin_textView_loginDesc"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        app:layout_constraintTop_toBottomOf="@id/singin_inputLayout_login"
-        android:text="Caso insira seu RA, coloque somente números sem pontos e traços"
-        android:textColor="@color/white"
-        android:textSize="12dp"
-        android:layout_marginStart="15dp"
-        app:layout_constraintStart_toStartOf="parent"
-        />
-
     <com.google.android.material.textfield.TextInputLayout
         android:id="@+id/singin_inputLayout_password"
         style="?attr/textInputFilledStyle"
@@ -87,7 +75,7 @@
         app:boxStrokeWidth="3dp"
         app:boxStrokeColor="@android:color/white"
         android:maxLines="1"
-        app:layout_constraintTop_toBottomOf="@id/singin_textView_loginDesc">
+        app:layout_constraintTop_toBottomOf="@id/singin_inputLayout_login">
         <com.google.android.material.textfield.TextInputEditText
             android:id="@+id/singin_inputEditText_password"
             android:paddingStart="0dp"
@@ -122,6 +110,7 @@
         android:layout_height="wrap_content"
         android:text="Esqueci minha senha"
         android:background="@android:color/transparent"
+        android:visibility="invisible"
         android:textColor="@android:color/white"
         app:layout_constraintTop_toBottomOf="@+id/singin_inputLayout_password"
         app:layout_constraintEnd_toEndOf="parent"
