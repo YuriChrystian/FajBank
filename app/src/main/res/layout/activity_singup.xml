@@ -5,37 +5,204 @@
     xmlns:app="http://schemas.android.com/apk/res-auto">
 
     <View
-        android:id="@+id/singun_view_white"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
+        android:id="@+id/singup_view_white"
         android:layout_width="match_parent"
         android:layout_height="250dp"
-        android:background="@color/white" />
+        android:background="@color/white"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <View
+        android:id="@+id/singup_view_yellow"
+        android:layout_width="match_parent"
+        android:layout_height="9dp"
+        android:background="#E8AF08"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/singup_view_white" />
 
     <TextView
-        android:id="@+id/singun_textView_titulo"
-        android:layout_width="match_parent"
+        android:id="@+id/singup_textView_titulo"
+        android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:textSize="32dp"
-        android:text="Seus Dados Pessoais"
+        android:text="Criar nova conta"
         style="@style/FajBank.Text.Title.Main"
-        app:layout_constraintBottom_toTopOf="@id/singup_textView_subTitulo"
         app:layout_constraintStart_toStartOf="parent"
-        android:layout_marginTop="156dp"
-        android:layout_marginStart="16dp"
-        />
-    <TextView
-        android:id="@+id/singup_textView_subTitulo"
+        app:layout_constraintBottom_toTopOf="@id/singup_view_yellow"
+        android:layout_marginBottom="20dp"
+        android:layout_marginStart="16dp" />
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/singup_inputLayout_firstName"
+        style="?attr/textInputFilledStyle"
+        android:textColorHint="@android:color/white"
+        app:hintTextColor="@android:color/white"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="Precisamos do seus dados para realizar o cadastro"
+        android:hint="Nome"
+        android:backgroundTint="@android:color/white"
+        app:boxStrokeWidth="3dp"
+        app:boxStrokeColor="@color/white"
+        android:maxLines="1"
         app:layout_constraintStart_toStartOf="parent"
-        android:layout_marginStart="16dp"
-        android:textSize="20dp"
-        android:layout_marginBottom="16dp"
-        app:layout_constraintBottom_toBottomOf="@id/singun_view_white"
-        />
+        app:layout_constraintTop_toBottomOf="@id/singup_view_yellow">
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/singup_inputEditText_firstName"
+            android:paddingStart="0dp"
+            android:maxLines="1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:backgroundTint="@android:color/white"
+            android:background="@android:color/transparent"
+            android:textColor="@android:color/white"
+            android:layout_marginStart="16dp"
+            android:layout_marginEnd="16dp" />
+    </com.google.android.material.textfield.TextInputLayout>
 
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/singup_inputLayout_secondName"
+        style="?attr/textInputFilledStyle"
+        android:textColorHint="@android:color/white"
+        app:hintTextColor="@android:color/white"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Sobrenome"
+        android:backgroundTint="@android:color/white"
+        app:boxStrokeWidth="3dp"
+        app:boxStrokeColor="@color/white"
+        android:maxLines="1"
+        android:layout_marginTop="16dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/singup_inputLayout_firstName">
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/singup_inputEditText_secondName"
+            android:paddingStart="0dp"
+            android:maxLines="1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:backgroundTint="@android:color/white"
+            android:background="@android:color/transparent"
+            android:textColor="@android:color/white"
+            android:layout_marginStart="16dp"
+            android:layout_marginEnd="16dp" />
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/singup_inputLayout_email"
+        style="?attr/textInputFilledStyle"
+        android:textColorHint="@android:color/white"
+        app:hintTextColor="@android:color/white"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="E-mail"
+        android:backgroundTint="@android:color/white"
+        app:boxStrokeWidth="3dp"
+        app:boxStrokeColor="@color/white"
+        android:maxLines="1"
+        android:layout_marginTop="16dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/singup_inputLayout_secondName">
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/singup_inputEditText_email"
+            android:paddingStart="0dp"
+            android:maxLines="1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:backgroundTint="@android:color/white"
+            android:background="@android:color/transparent"
+            android:textColor="@android:color/white"
+            android:layout_marginStart="16dp"
+            android:layout_marginEnd="16dp" />
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/singup_inputLayout_password"
+        style="?attr/textInputFilledStyle"
+        app:hintTextColor="@android:color/white"
+        android:textColorHint="@android:color/white"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        app:counterTextColor="@android:color/white"
+        android:hint="Digite sua senha"
+        app:boxStrokeWidth="3dp"
+        app:boxStrokeColor="@color/white"
+        android:maxLines="1"
+        app:layout_constraintTop_toBottomOf="@id/singup_inputLayout_email">
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/singup_inputEditText_password"
+            android:paddingStart="0dp"
+            android:background="@android:color/transparent"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:inputType="textPassword"
+            android:textColor="@android:color/white"
+            android:layout_marginStart="16dp"
+            android:layout_marginEnd="16dp"
+            android:backgroundTint="@android:color/white" />
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/singup_inputLayout_confirmPassword"
+        style="?attr/textInputFilledStyle"
+        app:hintTextColor="@android:color/white"
+        android:textColorHint="@android:color/white"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        app:counterTextColor="@android:color/white"
+        android:hint="Confirme sua senha"
+        app:boxStrokeWidth="3dp"
+        app:boxStrokeColor="@color/white"
+        android:maxLines="1"
+        app:layout_constraintTop_toBottomOf="@id/singup_inputLayout_password">
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/singup_inputEditText_confirmPassword"
+            android:paddingStart="0dp"
+            android:background="@android:color/transparent"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:inputType="textPassword"
+            android:textColor="@android:color/white"
+            android:layout_marginStart="16dp"
+            android:layout_marginEnd="16dp"
+            android:backgroundTint="@android:color/white" />
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/singup_button_criar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Criar conta"
+        style="@style/FajBank.Button.Primary"
+        android:layout_marginHorizontal="16dp"
+        android:layout_marginBottom="16dp"
+        android:layout_marginTop="24dp"
+        android:enabled="false"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <ProgressBar
+        android:id="@+id/singup_progressBar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:visibility="gone"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent" />
+
+    <View
+        android:id="@+id/singup_overlay"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="#80E8AF08"
+        android:visibility="gone"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
