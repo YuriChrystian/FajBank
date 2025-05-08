@@ -1,7 +1,12 @@
 package br.edu.unifaj.mobile.fajbank.data.model;
 
+import com.google.gson.annotations.SerializedName;
+
 public class AuthenticateRequest {
+    @SerializedName("email")
     private String email;
+
+    @SerializedName("password")
     private String password;
 
     public AuthenticateRequest(String email, String password) {
