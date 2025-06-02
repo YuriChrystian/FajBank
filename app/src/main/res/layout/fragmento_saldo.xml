@@ -1,0 +1,212 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    >
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="16dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:gravity="center_vertical"
+            android:background="@color/white"
+            android:padding="16dp"
+            android:layout_marginBottom="16dp">
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/tv_user_greeting"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="20sp"
+                    android:textStyle="bold"
+                    android:textColor="@color/black"
+                    tools:text="Olá, Bruno!" />
+                <TextView
+                    android:id="@+id/tv_invoice_status"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="14sp"
+                    android:layout_marginBottom="16dp"
+                    android:layout_marginTop="4dp"
+                    tools:text="Nenhuma fatura em aberta" />
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="4dp"
+                    android:background="@color/black"
+                    />
+
+                <TextView
+                    android:id="@+id/tv_saldo_title"
+                    android:textColor="@color/black"
+                    android:textStyle="bold"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Saldo disponível"
+                    android:textSize="16sp"
+                    />
+
+                <TextView
+                    android:id="@+id/tv_saldo_value"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="24sp"
+                    android:textStyle="bold"
+                    android:textColor="@color/black"
+                    android:layout_below="@id/tv_saldo_title"
+                    android:layout_marginTop="8dp"
+                    tools:text="R$ 180,85" />
+
+
+
+            </LinearLayout>
+
+            <ImageView
+                android:id="@+id/settings_icon"
+                android:layout_width="32dp"
+                android:layout_height="32dp"
+                android:contentDescription="Configurações"
+                android:src="@drawable/ic_settings" />
+
+            <ImageView
+                android:id="@+id/iv_saldo_arrow"
+                android:layout_width="24dp"
+                android:layout_height="24dp"
+                android:contentDescription="Ver detalhes do saldo" />
+
+        </LinearLayout>
+
+        <androidx.cardview.widget.CardView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:cardCornerRadius="8dp"
+            app:cardElevation="2dp"
+            android:backgroundTint="@color/white"
+            android:layout_marginBottom="16dp">
+        </androidx.cardview.widget.CardView>
+
+        <androidx.cardview.widget.CardView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:cardCornerRadius="8dp"
+            app:cardElevation="2dp"
+            android:backgroundTint="@color/primary"
+            android:layout_marginBottom="16dp">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="16dp">
+
+                <TextView
+                    android:id="@+id/tv_mensalidade"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textStyle="bold"
+                    android:textSize="16sp"
+                    android:textColor="@color/black"
+                    tools:text="Mensalidade" />
+
+                <TextView
+                    android:id="@+id/tv_mensalidade_due_date"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="16sp"
+                    android:textColor="@color/black"
+                    android:layout_below="@id/tv_mensalidade"
+                    tools:text="vence em 22/08" />
+
+                <TextView
+                    android:id="@+id/tv_mensalidade_value"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="24sp"
+                    android:textStyle="bold"
+                    android:textColor="@color/black"
+                    android:layout_below="@id/tv_mensalidade_due_date"
+                    android:layout_marginTop="8dp"
+                    tools:text="R$ 800,00" />
+
+                <TextView
+                    android:id="@+id/tv_mensalidade_discount"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="12sp"
+                    android:textColor="@color/black"
+                    android:layout_below="@id/tv_mensalidade_value"
+                    android:layout_marginTop="4dp"
+                    tools:text="Desconto válido até quinto dia útil" />
+
+                <ImageView
+                    android:id="@+id/iv_mensalidade_arrow"
+                    android:layout_width="24dp"
+                    android:layout_height="24dp"
+                    android:src="@drawable/ic_arrow_forward"
+                    android:layout_alignParentEnd="true"
+                    android:layout_centerVertical="true"
+                    android:contentDescription="Ver detalhes da mensalidade"
+                    app:tint="@color/black" />
+
+            </RelativeLayout>
+        </androidx.cardview.widget.CardView>
+
+        <androidx.cardview.widget.CardView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:cardCornerRadius="8dp"
+            app:cardElevation="2dp"
+            android:backgroundTint="@color/white">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:padding="16dp">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Linha do tempo"
+                    android:textSize="18sp"
+                    android:textStyle="bold"
+                    android:textColor="@color/black"
+                    android:layout_marginBottom="16dp"/>
+
+                <LinearLayout
+                    android:id="@+id/ll_timeline_items_container"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:layout_marginBottom="16dp">
+
+                </LinearLayout>
+
+                <Button
+                    android:id="@+id/btn_ver_tudo"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="ver tudo"
+                    android:textColor="@color/white"
+                    style="@style/FajBank.Button.Second"
+                    android:paddingVertical="12dp"
+                    android:textAllCaps="true"
+                    android:textSize="16sp"/>
+
+            </LinearLayout>
+        </androidx.cardview.widget.CardView>
+
+    </LinearLayout>
+</ScrollView>

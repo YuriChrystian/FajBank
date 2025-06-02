@@ -19,6 +19,8 @@
         <activity
             android:name=".GatewayActivity"
             />
+        <activity android:name=".home.HomeActivity"
+            />
         <activity android:name=".feature.user.singup.SingUpActiivity"
             />
         <activity
